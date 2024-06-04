@@ -21,6 +21,7 @@ Plug 'tpope/vim-commentary' " type gcc to auto-comment a line, or if stuff is hi
 Plug 'ap/vim-css-color'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'sainnhe/sonokai', { 'as': 'sonokai' }
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -32,7 +33,7 @@ let g:deoplete#enable_at_startup = 1
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'ervandew/supertab'
 call plug#end()
-colorscheme dracula
+colorscheme sonokai
 
 set title
 set bg=light
